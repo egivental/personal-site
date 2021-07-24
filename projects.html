@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Emile - Projects
+    </title>
+    <link rel="stylesheet" href="project.css">
+    <script type="text/javascript" src="projects.json"> </script>
+    <script>
+        function load() {
+            const data = JSON.parse(projects);
+            console.log(data);
+            data.projects.forEach(element => {
+                let projectContainer = document.createElement("div");
+                projectContainer.className = "project-container"
+                projectContainer.onclick = () => window.location = element.url;
+
+
+                let titleDateContainer = document.createElement("div");
+                titleDateContainer.className = "flex-container";
+
+                
+                let titleContainer = document.createElement("div");
+                titleContainer.className = 'project-title';
+                titleContainer.innerHTML = element.name;
+
+                let date = document.createElement("div");
+                date.className = 'project-date';
+                date.innerHTML = element.date;
+
+                titleDateContainer.appendChild(titleContainer);
+                titleDateContainer.appendChild(date);
+                projectContainer.appendChild(titleDateContainer);
+
+                let shortDescription = document.createElement("div");
+                shortDescription.className = "project-short";
+                shortDescription.innerHTML = element.short_description;
+                projectContainer.appendChild(shortDescription);
+
+                let tools = document.createElement("div");
+                tools.className = "project-tools";
+                tools.innerHTML = element.tools;
+                projectContainer.appendChild(tools);
+                
+                document.body.appendChild(projectContainer);
+            });
+        }
+    </script>
+</head>
+<body>
+    <script> 
+        load();
+    </script>
+    <script type="text/javascript" src="components.js"></script>
+</body>
+</html>

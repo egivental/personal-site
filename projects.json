@@ -1,0 +1,59 @@
+projects = `{
+    "projects": [
+        {
+            "name": "Twitcher",
+            "short_description": "A Twitter clone with Livestreaming capabilities through twilio",
+            "tools": "React/Redux, MongoDb, Express, and HTML/CSS", 
+            "date": "March - May 2021 in CIS 557",
+            "url": "project-pages/twitcher.html",
+            "active": "Taken offline due to hosting costs.",
+            "git-url": "https://github.com/egivental/CopyOfTwitchTwitter",
+            "image": ""
+        },
+        {
+            "name": "Google Clone",
+            "short_description": "A Google Clone with AWS Services and Frontend",
+            "tools": "Java for backend, AWS RDS and S3 for storage, AWS EMR for map reduce jobs, Spark for Web Server, and HTML/CSS for frontend.", 
+            "date": "January - March 2021",
+            "url": "project-pages/googleClone.html",
+            "git-url": "https://github.com/egivental/CopyOfGoogleClone",
+            "image": ""
+        },
+        {
+            "name": "Interpretable ML Wrappers",
+            "short_description": "A Pip installable ML Wrapper for CORELS, SLIM, and BOA",
+            "tools": "95% Python and 5% C for wrapping SLIM", 
+            "date": "June - August 2018",
+            "url": "project-pages/pip.html",
+            "git-url": "https://github.com/egivental/resetInterpretability",
+            "image": ""
+        },
+        {
+            "name": "OS",
+            "short_description": "A Simple OS with file management and a linux terminal",
+            "tools": "C", 
+            "date": "October - December 2018",
+            "url": "project-pages/os.html",
+            "git-url": "https://github.com/egivental/SophomoreOSCopy",
+            "image": ""
+        },
+        {
+            "name": "This Website",
+            "short_description": "You're looking at it",
+            "tools": "CSS/HTML/JS, and a credit card", 
+            "date": "July 2021",
+            "url": "project-pages/website.html",
+            "git-url": ,
+            "image": ""
+        },
+        {
+            "name": "Spark Alternative",
+            "short_description": "A web server java library that one could use like Spark, or its python equivalent, Django.",
+            "tools": "Java with maven package management", 
+            "date": "February 2021",
+            "url": "project-pages/webserver.html",
+            "git-url": "https://github.com/egivental/CopyOfWebServer",
+            "image": ""
+        }
+    ]
+}`;
